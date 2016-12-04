@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wexu.huckster.control.MainActivity"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué quieres hacer?"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorTextIcons"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:typeface="sans"
+            android:id="@+id/textMain"
+            />
+
+        <Space
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/sell"
+            android:drawablePadding="0dp"
+            android:id="@+id/btnVender"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#F57C00"
+            android:text="Vender"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:textAlignment="center"
+            android:onClick="start"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/buy"
+            android:drawablePadding="8dp"
+            android:id="@+id/btnComprar"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FF4081"
+            android:text="Comprar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:onClick="start"/>
+
+
+    </TableLayout>
+
+</LinearLayout>
+
